@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.page{
+    overflow: auto;
+
+    resize: both;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    display: inline-grid;
+    background-color: rgb(241, 134, 134);
+    border-radius: 5px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    gap: 7px;
+
+}
+.header {
+    background-color: #0a0061;
+    grid-column: 1 / 3;
+    border-radius: 5px;
+
+}
+.sideBar{
+    background: green;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    border-radius: 5px;
+}
+.nav{
+    background-color: rgb(131, 131, 0);
+}
+.article{
+    background-color: orange;
+}
+.footer{
+    background: purple;
+    grid-column: 1 / 3;
+}
+
